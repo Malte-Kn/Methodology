@@ -1,0 +1,11 @@
+Bruteforce directories: 
+			FUZZ Dirs with fuff
+			parameters with arjun
+	Weak Passwords
+	Check APIs directly
+
+specific wordlist : check for different extensions if allowed
+		if .jpg allowed use valid-file.php.jpg
+
+check cname directories and try the path/dirs
+

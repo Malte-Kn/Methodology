@@ -1,0 +1,10 @@
+iss shorname scanner to identify the shortname file for a normal file
+
+look for .aspx /.asp 
+
+Not aas interestingfiles:
+	ASPNET
+	DEFAUL
+	GLOBAL
+	MASTER
+	WEB

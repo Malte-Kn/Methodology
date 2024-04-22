@@ -1,0 +1,20 @@
+
+
+
+Use SSRF to access Hidden files with:
+	Host: localhost
+	Origin: http://localhost
+	Referer: http://localhost/
+
+For s3/aws:
+	aws.internal/169.254.169.254
+
+If not allowed (403) maybe reverse proxy:
+	try different content-types
+
+If localhost not allowd DNS Rebind
+	Tool to create host with low TTL for Rebind
+	https://lock.cmpxchg8b.com/rebinder.html
+		A to 127.0.0.1 B to known/live IP
+
+Use the Host andsee if SSRF protection is bypassed

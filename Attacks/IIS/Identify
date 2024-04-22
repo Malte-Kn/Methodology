@@ -1,0 +1,18 @@
+Blue Page
+Webalyzer
+
+---------
+Cookies:
+	ASP.NET_SessionId
+	ASPSESSION
+---------
+Header Regex:
+	X-AspNet-Verso...
+	..^ASP\\.Net
+---------
+HTML/URL Regex
+
+Veiwsate
+
+\\.spx?(?:$|\\?)
+

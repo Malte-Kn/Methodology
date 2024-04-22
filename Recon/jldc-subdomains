@@ -1,0 +1,1 @@
+curl -s https://jldc.me/anubis/subdomains/ in/file-splitter-3:item | jq '.[]' | sed 's///g' | sort -n | uniq | tee out/jldc-subdomains-1/item/output.txt

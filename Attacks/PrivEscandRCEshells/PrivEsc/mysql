@@ -1,0 +1,6 @@
+ mysql -u name -ppassword
+ 
+ use library
+ 
+
+ INSERT INTO dreams VALUE("sha", "$(/bin/bash)");

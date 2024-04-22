@@ -1,0 +1,15 @@
+Target tab in Burp, select host, right click, copy all URLs in this host, copy to a file
+
+cat urllist | unfurl paths | cut -d"/" -f2-3 | sort -u > /tmp/pathlist 
+
+Or get the list of paths you already discovered in the application in some other way. Note: the paths should not start with /
+
+Finally:
+
+python3 opt/nginxpwner/nginxpwner.py https://example.com /tmp/pathlist
+ 
+ 
+ or
+ 
+python3 opt/nginxpwner/nginx-pwner-no-server-header.py https://example.com /tmp/pathlist
+
