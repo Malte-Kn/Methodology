@@ -1,0 +1,10 @@
+Use the subdomainname for Data exfiltration:
+	[data].yourdomain
+ 	1. Limit MaxName of FQDM = 255 Chars
+ 	2. Subdomain part < 63 Chars
+  Requierments:
+  	1. Need Domain Nmae e.g. interact.sh
+  	2. Need Dns request from target
+  	3. Fully configuered BNS name
+  	4. ???
+  	5. Success

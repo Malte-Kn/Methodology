@@ -1,0 +1,19 @@
+
+The _next/image Componetnt
+	riszie large images at API endpoint https://example.com/_next/image?url=asd.jpg&w=0&q=0
+	it places it in an img tag
+	Uses the "remotePatterns" in next.config.js to serve image from other domains
+	
+	If and host is allowed ("**") can lead to SSRF:
+		1. Load any local URL
+		https://example.com/_next/image?url=https://localhost:2345/api/v1/x&w=256&q=75 
+		2. If "dangerouslyAllowSVG" is enabled XSS via SVG is possible
+		3. If "dangerouslyAllowSVG" is enabled Leak full content of XML via SSRF:
+			Next uses sniffing to determin the Content-Type even if its set in Header.
+			Only checks in SVG if the Response starts with"<?xml".
+		4.If the internal Host does not responed with any Content-Type response might be leaked(unlikely).
+		5. Common Attck some specific Domains are Whitelsited. The image renderer follows redirect.
+			With an OpenRedirect on such an Whiteliseted Domain you can get SSRF:
+			asd.com is whitelisted with a redirect in asd.com/logout?url=gfd
+			https://example.com/_next/image?url=https://asd.com/logout%3furl53Dhttps%3A%2F%2Flocalhost%3A2345%2Fapi%2Fv1%2Fx&w=256&q=75
+SSRF in Server Actions

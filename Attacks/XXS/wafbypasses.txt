@@ -1,0 +1,2 @@
+Akamai WAF
+?foobar=<foo%20bar=%250a%20onclick=<mycode>

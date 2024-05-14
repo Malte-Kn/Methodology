@@ -8,7 +8,7 @@ nmap --script http-vhosts -p 80,443 --script-args http-vhosts.domain=crapi.site,
 Fuzzing GObuster
 
 gobuster vhost -k --append-domain -u crapi.site -w /opt/SecLists/Discovery/DNS/subdomains-top1million-20000.txt
-
+													5000.txt
 
 --------------------
 VHOST detection via Subject Alternative Name (SAN) certificates
