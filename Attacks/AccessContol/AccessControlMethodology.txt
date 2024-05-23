@@ -1,0 +1,20 @@
+Vertical
+Acces Admin	
+	Defautlt Credentials
+	Hidden Admin Panel
+Privescelation:
+	Increse own rank
+Url Rewrite:
+	miss match in ur path e.g. /admin vs /adMiN
+		in Spring arbitray fiel extension might be possible:
+			/admin.anything
+		different Combination /admin and /deleteUser to /admin/deletuser
+			add / at end
+	add headers:
+	X-Original-URL: PATH
+	X-Rewrite-URL: PATH
+		For Parameters in URL change to Post add Parameters in Post Body if possible
+Different HTTP METHODs:
+	IF Post is Dissallowed Try DELETE UPGRADE(Info in PArameters) PUT
+
+Horizontal
