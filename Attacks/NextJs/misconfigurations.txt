@@ -1,5 +1,5 @@
 
-The _next/image Componetnt
+# The _next/image Component
 	riszie large images at API endpoint https://example.com/_next/image?url=asd.jpg&w=0&q=0
 	it places it in an img tag
 	Uses the "remotePatterns" in next.config.js to serve image from other domains

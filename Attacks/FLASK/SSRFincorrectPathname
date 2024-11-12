@@ -1,5 +1,0 @@
-https://rafa.hashnode.dev/exploiting-http-parsers-inconsistencies
-
-
-
-ADD @ before Path + SSRF Domain e.g. localhost;169.254.169.254

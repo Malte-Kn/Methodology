@@ -1,7 +1,0 @@
-reset email of own acc
-
-save reset
-
-change mail to victim
-
-win

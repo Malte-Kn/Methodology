@@ -2,4 +2,4 @@ Add different Paremeters to e.g. API calls
 Use = or & or # after existing Parameters
 after Parameter URL encode # as %23RndString (so not confuse with Fragments)
 
-Replacepalceholders such as self/user
+Replacepalce holders such as self/user

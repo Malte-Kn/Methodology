@@ -1,0 +1,10 @@
+# Carefull black-box testing
+
+1.Send full payload
+2.If blocked verify why its blocked
+	-test the different parts of the Payloads
+	-swap parts of payloads with similar functionality
+3. Use different Techniques:
+	1.Filter collison:
+		e.g. <s"vg o"nload=al"ert"()/"/   if the filter removes "
+	

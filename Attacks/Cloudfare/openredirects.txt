@@ -1,0 +1,2 @@
+Semi open Redirect in image optimasiation
+../cdn-cgi/image/onerror=redirect/http://sub.example.com

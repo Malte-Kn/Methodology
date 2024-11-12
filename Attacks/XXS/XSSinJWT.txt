@@ -1,0 +1,7 @@
+JWTS
+	Header.Payload.Signature
+For XSS or SQL 
+	-Craft a payload in the Payload spot of the jwt for the Attack
+	-encode the payload 
+	-Use the mali. JWT in e.g. a Parameter
+	-observe if the payload is reflected 
