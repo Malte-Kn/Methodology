@@ -1,7 +1,7 @@
 # Method
-1.Create multiple Accounts based on different roles(Horizontal)
+1. Create multiple Accounts based on different roles(Horizontal)
 
-2.How does the Application identify a user(UUID? Cookie? JWT?)
+2. How does the Application identify a user(UUID? Cookie? JWT?)
 	On Front/Backend
 	
 3. What Mechanisims exists?

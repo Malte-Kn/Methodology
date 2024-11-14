@@ -12,5 +12,8 @@ def queueRequests(target, wordlists):
 def handleResponse(req, interesting):
     # filter responses based on request Time or some error in response
     pattern = re.compile(r'\b(error|Error|syntax|Syntax)\b')
+    # Put after if to only see the results
+    table.add(req)
+    # Can Use "PATTERN_STRING" in req.response.encode('utf8') instead if REGEX has issues
     if !bool(pattern.search(req.response.encode('utf8'))):
-        table.add(req)
+        req.label = "YOURLABEL"
