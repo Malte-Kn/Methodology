@@ -22,7 +22,7 @@ HEAD with parameters
 POST with different Data/Data Types
 PUT with different Data/Data Types
 DELETE to bypass POST/PUT /delete
-
+```
 ## Other
 ```
 Check supported Content types 
