@@ -29,7 +29,7 @@ TO
 </userinfo>
 ```
 
-If works try different apporache/payloads
+If it works, try different approaches/payloads
 e.g.
 ```
 <!--?xml version="1.0"?-->
@@ -46,4 +46,4 @@ e.g.
   </Uid>
 </userinfo>
 ```
-Read the etc/passwd file if no waf
+Read the etc/passwd file if there is no waf
