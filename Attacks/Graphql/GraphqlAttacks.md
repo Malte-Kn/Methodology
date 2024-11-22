@@ -44,7 +44,7 @@ Discovering schema info:
 ## Test lika API with OWASP 10 such as IDOR
 	If objects are directly accessed check for IDORs
 
-##Tools
+## Tools
 Clairvoyance:
 	Uses suggestions to recover correct queries:
 	ProductInfo -->  "ProductInfo" does not exists do you mean "ProductInformation"? 
